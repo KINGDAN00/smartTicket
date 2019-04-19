@@ -136,12 +136,9 @@ class HomeScreen extends State<MyHomePageScreen> {
                 onTap: () {},
                 child: new ListTile(
                   onTap: () {
-                    // Navigator.push(context, new MaterialPageRoute(
-                    //     builder:(BuildContext context)=>new Cart(),
-                    //  )
-                    // );
+                  
                   },
-                  title: new Text('Cart',
+                  title: new Text('Mon Compte smart',
                       style: new TextStyle(color: Colors.blue)),
                   leading: new Icon(
                     Icons.shopping_cart,
@@ -152,7 +149,7 @@ class HomeScreen extends State<MyHomePageScreen> {
               new InkWell(
                 onTap: () {},
                 child: new ListTile(
-                  title: new Text('Alert',
+                  title: new Text('Profil',
                       style: new TextStyle(color: Colors.blue)),
                   leading: new Icon(
                     Icons.favorite,
@@ -167,7 +164,7 @@ class HomeScreen extends State<MyHomePageScreen> {
               new InkWell(
                 onTap: () {},
                 child: new ListTile(
-                  title: new Text('Settings',
+                  title: new Text('Apropos de SmartTicket',
                       style: new TextStyle(color: Colors.blue)),
                   leading: new Icon(
                     Icons.settings,
@@ -179,7 +176,7 @@ class HomeScreen extends State<MyHomePageScreen> {
                 onTap: () {},
                 child: new ListTile(
                   title: new Text(
-                    'Help',
+                    'Aide',
                     style: new TextStyle(color: Colors.blue),
                   ),
                   leading: new Icon(
@@ -239,18 +236,12 @@ class HomeScreen extends State<MyHomePageScreen> {
       children: <Widget>[
         buildTile(context, 0, "TAXI", null, Icons.directions_car, "O items",
             Colors.orange, Colors.orange[50]),
-        buildTile(
-            context,
-            1,
-            "Helicopters",
-            null,Icons.directions_car,
-            "658 items",
-            Colors.blue,
-            Colors.blue[50]),
-        buildTile(context, 2, "Boats", null, Icons.directions_boat, "217 items",
+        buildTile(context, 0, "BUS", null, Icons.directions_bus, "O items",
+            Colors.orange, Colors.orange[50]),
+        buildTile(context, 2, "BATEAU", null, Icons.directions_boat, "0 items",
             Colors.purple, Colors.purple[50]),
-        buildTile(context, 3, "Scooters", null, Icons.directions_bike,
-            "24 items", Colors.red, Colors.red[50]),
+        buildTile(context, 3, "AVION", null, Icons.local_airport,
+            "0 items", Colors.red, Colors.red[50]),
       ],
     );
   }
